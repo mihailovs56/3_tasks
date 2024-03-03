@@ -1,0 +1,27 @@
+﻿<Window x:Class="WpfApp5.Window2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp5"
+        mc:Ignorable="d"
+        Title="Window2" Height="450" Width="800" KeyDown="Window_ClickArrow">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+            <ColumnDefinition Width="38*"></ColumnDefinition>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="18*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Canvas Grid.Column="1" Grid.Row="1" Name="canvas">
+            <Label Grid.Column="1" Grid.Row="1" Height="20" Width="20" Name="lb1" Canvas.Top="175" Canvas.Left="380" Background="black"></Label>
+        </Canvas>
+        <Label Name="lb2" Grid.Column="1" Background="Transparent"></Label>
+        <Label Name="lb3" Grid.Column="1" Grid.Row="2" Background="Transparent"></Label>
+    </Grid>
+    
+</Window>
